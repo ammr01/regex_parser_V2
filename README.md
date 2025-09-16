@@ -117,7 +117,7 @@ Phone Included:$$$$NO:
 
 
 ## Where To Use
-- It could be used for log parsing, data extraction, and many more use cases.
+It could be used for log parsing, data extraction, and many more use cases.
 
 ---
 
