@@ -61,7 +61,7 @@ sudo apt update && sudo apt install perl dos2unix sed -y
 
 ## Configuration File Format
 
-The configuration file defines the fields to extract, along with their regex and capture groups. Each line should follow this format:
+The configuration file defines the fields to extract, along with their regex and matching method. Each line should follow this format:
 
 ```plaintext
 <field_name>:<matching_method>:<regex>
@@ -98,7 +98,7 @@ Also you can specify the output formatting
 # This will print the whole match because no matching method was specified
 email::[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}
 
-# This will capture the phone number using capture group 1, and wrap the result with double-quote
+# This will capture the phone number using capture group 1, and CSV escape the cell + wrap the cell with double-quote
 phone:1:(\d{3}-\d{3}-\d{4})
 
 # This will capture the phone number, incase of the previous regex not mathced, the capture will be done using named capture group 'phone'
