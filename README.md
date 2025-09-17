@@ -13,7 +13,7 @@
   - add headerless mode to add csv header in output file
   - general performance enhancments
   - add signal handling "handle sighup by sending sigstop/sigcont to the core 'perl' parser"
-  - allow escaping special characters 'using \'
+  - allow escaping special characters 'using \\'
 ---
 
 
